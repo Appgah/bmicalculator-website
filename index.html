@@ -290,10 +290,85 @@
             font-size: 1.05rem;
         }
         
-        .stats-section {
+        .pricing-section {
             background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 80px 0;
+            padding: 100px 0;
             color: white;
+            text-align: center;
+        }
+        
+        .pricing-section .section-title {
+            color: white !important;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.9) !important;
+            background: none !important;
+            -webkit-background-clip: unset !important;
+            -webkit-text-fill-color: white !important;
+            background-clip: unset !important;
+        }
+
+        .pricing-section p {
+            color: white !important;
+            text-shadow: 0 0 15px rgba(0,0,0,0.7), 1px 1px 6px rgba(0,0,0,0.8) !important;
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pricing-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 25px;
+            padding: 40px 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .pricing-card.featured {
+            border: 2px solid #fff;
+            transform: scale(1.05);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .pricing-card .period {
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+        
+        .pricing-card .savings {
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .stats-section {
+            background: #f8fafc;
+            padding: 80px 0;
             text-align: center;
         }
         
@@ -312,7 +387,7 @@
             font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #fff, #f0f0f0);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -320,21 +395,7 @@
         
         .stat-label {
             font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .stats-section .section-title {
-            color: white !important;
-            text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.9) !important;
-            background: none !important;
-            -webkit-background-clip: unset !important;
-            -webkit-text-fill-color: white !important;
-            background-clip: unset !important;
-        }
-
-        .stats-section p {
-            color: white !important;
-            text-shadow: 0 0 15px rgba(0,0,0,0.7), 1px 1px 6px rgba(0,0,0,0.8) !important;
+            color: #64748b;
         }
         
         .cta-section {
@@ -400,6 +461,7 @@
             .header .subtitle { font-size: 1.2rem; }
             .section-title { font-size: 2.2rem; }
             .features { grid-template-columns: 1fr; gap: 30px; }
+            .pricing-cards { grid-template-columns: 1fr; }
             .container { padding: 0 15px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
             .footer-links a { 
@@ -418,6 +480,7 @@
             .logo-image { border-radius: 25px; }
             .stat-number { font-size: 2.5rem; }
             .stats-grid { grid-template-columns: 1fr; gap: 30px; }
+            .pricing-card .price { font-size: 2.5rem; }
         }
         
         .logo-image {
@@ -442,7 +505,7 @@
                 </div>
                 <h1>BMI Calculator</h1>
                 <p class="subtitle">AI-Powered Health Analysis & Wellness Companion</p>
-                <p class="description">Transform your health journey with intelligent BMI tracking, personalized AI insights, and comprehensive wellness analytics designed for modern living.</p>
+                <p class="description">Transform your health journey with intelligent BMI tracking, personalized AI insights, comprehensive wellness analytics, and premium features designed for modern living.</p>
                 
                 <div class="download-section">
                     <a href="https://play.google.com/store/apps/details?id=com.appgah.bmi_calculator" 
@@ -459,44 +522,82 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Powerful Features</h2>
-                <p class="section-subtitle">Everything you need to achieve your health goals, powered by cutting-edge AI technology</p>
+                <p class="section-subtitle">Everything you need to achieve your health goals, powered by cutting-edge AI technology and cloud synchronization</p>
             </div>
             
             <div class="features">
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                     <h3>AI Health Analysis</h3>
-                    <p>Get personalized health insights and recommendations powered by advanced artificial intelligence tailored to your unique profile and health goals.</p>
+                    <p>Get unlimited personalized health insights and recommendations powered by advanced artificial intelligence tailored to your unique profile and health goals.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Smart Trend Tracking</h3>
-                    <p>Monitor your BMI history with unlimited tracking. Visualize your progress with detailed charts and analytics to stay motivated.</p>
+                    <h3>Unlimited BMI Tracking</h3>
+                    <p>Monitor your BMI history with unlimited tracking and storage. Visualize your progress with detailed charts and analytics to stay motivated on your health journey.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
                     <h3>AI Chat Assistant</h3>
-                    <p>Get unlimited access to our AI health assistant for personalized advice, diet tips, and answers to your health questions 24/7.</p>
+                    <p>Get unlimited access to our premium AI health assistant for personalized advice, diet tips, workout suggestions, and answers to your health questions 24/7.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">📄</div>
                     <h3>Professional PDF Reports</h3>
-                    <p>Export unlimited professional health reports with comprehensive BMI analysis, history, and recommendations to share with healthcare providers.</p>
+                    <p>Export unlimited professional health reports with comprehensive BMI analysis, history, trends, and personalized recommendations to share with healthcare providers.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">☁️</div>
-                    <h3>Cloud Sync</h3>
-                    <p>Access your data across all devices with secure cloud synchronization. Your health data is always backed up and available when you need it.</p>
+                    <h3>Cloud Sync & Backup</h3>
+                    <p>Access your data across all devices with secure cloud synchronization. Your health data is always backed up and available when you need it, anywhere, anytime.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
                     <h3>Privacy & Security</h3>
-                    <p>Your health data is encrypted and secure with both local storage and cloud options. Complete privacy protection with no data sharing.</p>
+                    <p>Your health data is encrypted and secure with both local storage and cloud options. Complete privacy protection with industry-standard security measures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="section-title">Premium Subscription Plans</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 20px;">Unlock the full potential of your health journey</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Monthly Plan</h3>
+                    <div class="price">$1.99</div>
+                    <div class="period">per month</div>
+                    <p>Perfect for trying out premium features</p>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3>Yearly Plan</h3>
+                    <div class="price">$20.00</div>
+                    <div class="period">per year</div>
+                    <div class="savings">Save 17% compared to monthly!</div>
+                    <p>Best value for long-term health tracking</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 30px; font-size: 1.8rem;">Premium Features Include:</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; max-width: 800px; margin: 0 auto;">
+                    <div>✨ Unlimited AI Chat with personalized insights</div>
+                    <div>📊 Unlimited PDF Export of health reports</div>
+                    <div>🎯 Advanced BMI Analysis & recommendations</div>
+                    <div>📈 Unlimited BMI History tracking</div>
+                    <div>🚫 Ad-Free Experience</div>
+                    <div>☁️ Cloud Sync across all devices</div>
+                    <div>🏆 Priority Support</div>
+                    <div>🔒 Enhanced Privacy Features</div>
                 </div>
             </div>
         </div>
@@ -504,20 +605,20 @@
 
     <section class="stats-section">
         <div class="container">
-            <h2 class="section-title" style="color: white; margin-bottom: 20px;">Trusted by Health Enthusiasts</h2>
-            <p style="font-size: 1.2rem; opacity: 0.9;">Join thousands of users on their wellness journey</p>
+            <h2 class="section-title">Trusted by Health Enthusiasts Worldwide</h2>
+            <p style="font-size: 1.2rem; color: #64748b;">Join thousands of users on their wellness journey with our AI-powered health companion</p>
             
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">10K+</div>
+                    <div class="stat-number">15K+</div>
                     <div class="stat-label">Active Users</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">50K+</div>
+                    <div class="stat-number">75K+</div>
                     <div class="stat-label">BMI Calculations</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">95%</div>
+                    <div class="stat-number">98%</div>
                     <div class="stat-label">User Satisfaction</div>
                 </div>
                 <div class="stat-item">
@@ -531,7 +632,7 @@
     <section class="cta-section">
         <div class="container">
             <h2 class="cta-title">Start Your Health Journey Today</h2>
-            <p class="cta-subtitle">Download BMI Calculator and discover the power of AI-driven health insights</p>
+            <p class="cta-subtitle">Download BMI Calculator and discover the power of AI-driven health insights with premium features</p>
             <a href="https://play.google.com/store/apps/details?id=com.appgah.bmi_calculator" 
                class="app-store-badge">
                 <span>🚀</span>
@@ -542,7 +643,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 BMI Calculator by APPGAH. All rights reserved.</p>
+            <p>&copy; 2024 BMI Calculator by APPGAH. All rights reserved.</p>
             <p>Designed for healthy living <span class="heart">❤️</span></p>
             <div class="footer-links">
                 <a href="privacy-policy.html">Privacy Policy</a>
