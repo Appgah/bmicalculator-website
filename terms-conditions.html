@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - BMI Calculator</title>
+    <meta name="description" content="Terms & Conditions for BMI Calculator - AI-Powered Health Analysis App. Read our terms of service.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f8fafc;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 60px;
+        }
+        
+        .header-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .header-content {
+            text-align: center;
+            color: white;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.9);
+        }
+        
+        .header-content p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            text-shadow: 0 0 15px rgba(0,0,0,0.7), 1px 1px 6px rgba(0,0,0,0.8);
+        }
+        
+        .back-nav {
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-link:hover {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .content-section {
+            background: white;
+            margin: -40px auto 0;
+            border-radius: 25px 25px 0 0;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+            padding: 60px 0 80px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .terms-content h2 {
+            color: #1a1a1a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+        
+        .terms-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .terms-content h3 {
+            color: #334155;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+        }
+        
+        .terms-content h4 {
+            color: #475569;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 25px 0 12px;
+        }
+        
+        .terms-content p {
+            margin-bottom: 15px;
+            color: #475569;
+            line-height: 1.8;
+        }
+        
+        .terms-content ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        .terms-content ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        .terms-content li {
+            margin-bottom: 10px;
+            color: #475569;
+            line-height: 1.7;
+        }
+        
+        .terms-content strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ff6b6b10, #ff525210);
+            border-left: 4px solid #ff6b6b;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #dc2626;
+        }
+        
+        .pricing-box {
+            background: linear-gradient(135deg, #667eea10, #764ba210);
+            border: 2px solid #667eea;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .price-item:last-child {
+            border-bottom: none;
+        }
+        
+        .price-label {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .price-value {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #667eea;
+        }
+        
+        .features-list {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        
+        .features-list h4 {
+            color: #667eea;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-email:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            background: #0f0f0f;
+            text-align: center;
+            padding: 40px 0;
+            color: #94a3b8;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #667eea;
+        }
+        
+        .last-updated {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .last-updated strong {
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content h1 { font-size: 2.5rem; }
+            .header-content p { font-size: 1.1rem; }
+            .content { padding: 0 20px; }
+            .terms-content h2 { font-size: 1.7rem; }
+            .contact-section h2 { font-size: 2rem; }
+            .footer-links a { 
+                display: block; 
+                margin: 10px 0; 
+            }
+            .price-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-section { padding: 60px 0 40px; }
+            .content-section { padding: 40px 0 60px; }
+            .contact-section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <div class="back-nav">
+                <a href="index.html" class="back-link">
+                    <span>←</span>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+            <div class="header-content">
+                <h1>Terms & Conditions</h1>
+                <p>Terms of service for BMI Calculator app users</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> October 1, 2024
+            </div>
+            
+            <div class="terms-content">
+                <h2>1. Acceptance of Terms</h2>
+                <p>Welcome to BMI Calculator, developed and operated by APPGAH ("we," "our," or "us"). By downloading, installing, accessing, or using our mobile application (the "App" or "Service"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, please do not use our App.</p>
+                
+                <p>These Terms constitute a legally binding agreement between you and APPGAH. We reserve the right to modify these Terms at any time, and your continued use of the App after such modifications constitutes your acceptance of the updated Terms.</p>
+
+                <h2>2. Description of Service</h2>
+                <p>BMI Calculator is a health and fitness mobile application that provides:</p>
+                <ul>
+                    <li>Body Mass Index (BMI) calculation tools</li>
+                    <li>Health tracking and progress monitoring</li>
+                    <li>Weight and height history management</li>
+                    <li>AI-powered health insights and recommendations</li>
+                    <li>Cloud synchronization for registered users</li>
+                    <li>Local storage option for guest users</li>
+                    <li>Premium subscription features</li>
+                </ul>
+
+                <h2>3. Eligibility and Account Registration</h2>
+                
+                <h3>3.1 Age Requirements</h3>
+                <ul>
+                    <li>You must be at least 13 years of age to create an account</li>
+                    <li>Users under 13 may use the App in Guest Mode under parental supervision</li>
+                    <li>Users between 13-18 must have parental consent to create an account</li>
+                </ul>
+
+                <h3>3.2 Account Creation</h3>
+                <ul>
+                    <li>You must provide accurate, current, and complete information during registration</li>
+                    <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+                    <li>You are responsible for all activities that occur under your account</li>
+                    <li>You must notify us immediately of any unauthorized use of your account</li>
+                    <li>We reserve the right to suspend or terminate accounts that violate these Terms</li>
+                </ul>
+
+                <h2>4. User Data and Storage Options</h2>
+                
+                <h3>4.1 Guest Mode (Local Storage)</h3>
+                <ul>
+                    <li>Data stored locally on your device only</li>
+                    <li>We do not have access to locally stored data</li>
+                    <li>Data will be permanently lost if you uninstall the App or reset your device</li>
+                    <li>No backup or recovery available for local data</li>
+                </ul>
+
+                <h3>4.2 Registered User (Cloud Storage)</h3>
+                <ul>
+                    <li>Data stored securely on our cloud servers</li>
+                    <li>Access your data across multiple devices</li>
+                    <li>Data backed up and recoverable</li>
+                    <li>Subject to our Privacy Policy</li>
+                </ul>
+
+                <h2>5. Subscription and Payment Terms</h2>
+                
+                <h3>5.1 Subscription Plans</h3>
+                <p>We offer premium subscription plans with enhanced features:</p>
+                
+                <div class="pricing-box">
+                    <div class="pricing-title">Premium Subscription Plans</div>
+                    <div class="price-item">
+                        <span class="price-label">Monthly Plan:</span>
+                        <span class="price-value">$1.99 per month</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="price-label">Yearly Plan:</span>
+                        <span class="price-value">$20.00 per year</span>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px; color: #667eea; font-weight: 600;">
+                        Save 17% with yearly subscription!
+                    </div>
+                </div>
+
+                <div class="features-list">
+                    <h4>Premium Features Include:</h4>
+                    <ul>
+                        <li>Unlimited AI Chat with personalized health insights</li>
+                        <li>Unlimited PDF Export of your BMI reports and history</li>
+                        <li>Advanced BMI Analysis with detailed health recommendations</li>
+                        <li>Unlimited BMI History tracking and progress monitoring</li>
+                        <li>Ad-Free Experience with no interruptions</li>
+                        <li>Cloud Sync across all your devices</li>
+                        <li>Priority Support for faster assistance</li>
+                    </ul>
+                </div>
+
+                <h3>5.2 Payment and Billing</h3>
+                <ul>
+                    <li>Subscriptions are processed through Google Play Store or Apple App Store</li>
+                    <li>Payment will be charged to your app store account upon purchase</li>
+                    <li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period</li>
+                    <li>Your account will be charged for renewal within 24 hours prior to the end of the current period</li>
+                    <li>Subscription prices are subject to change with notice</li>
+                </ul>
+
+                <h3>5.3 Free Trial</h3>
+                <ul>
+                    <li>Currently, we do not offer free trial periods for our subscriptions</li>
+                    <li>All subscriptions begin immediately upon purchase</li>
+                    <li>You can cancel at any time to prevent future charges</li>
+                </ul>
+
+                <h3>5.4 Cancellation</h3>
+                <ul>
+                    <li>You can cancel your subscription at any time through your app store account settings</li>
+                    <li>Cancellation takes effect at the end of the current billing period</li>
+                    <li>You will retain access to premium features until the end of the paid period</li>
+                    <li>No partial refunds for unused portions of subscription periods</li>
+                </ul>
+
+                <h3>5.5 Refund Policy</h3>
+                <ul>
+                    <li>All purchases are processed through Google Play Store or Apple App Store</li>
+                    <li>Refund requests must be submitted through your respective app store within their refund window</li>
+                    <li>Refunds are subject to the app store's refund policies (typically 48 hours for Google Play, varies for Apple)</li>
+                    <li>We do not process refunds directly - please contact your app store for refund requests</li>
+                    <li>For technical issues preventing app use, please contact our support at appgah.dev@gmail.com within 48 hours of purchase</li>
+                </ul>
+
+                <h2>6. AI Features and Health Information</h2>
+                
+                <h3>6.1 AI-Powered Insights</h3>
+                <ul>
+                    <li>Our App uses artificial intelligence to provide personalized health insights</li>
+                    <li>AI recommendations are based on the data you provide</li>
+                    <li>AI features are for informational purposes only</li>
+                </ul>
+
+                <h3>6.2 Medical Disclaimer</h3>
+                <div class="highlight-box">
+                    <p><strong>IMPORTANT: This App is NOT a substitute for professional medical advice, diagnosis, or treatment.</strong></p>
+                </div>
+                
+                <ul>
+                    <li>BMI calculations and health insights are for informational and educational purposes only</li>
+                    <li>Always consult qualified healthcare professionals for medical advice</li>
+                    <li>Do not disregard professional medical advice or delay seeking it because of information from this App</li>
+                    <li>We are not responsible for any health decisions you make based on App information</li>
+                    <li>BMI is a general indicator and may not be accurate for athletes, elderly, pregnant women, or people with certain medical conditions</li>
+                </ul>
+
+                <h2>7. User Conduct and Prohibited Activities</h2>
+                <p>You agree NOT to:</p>
+                <ul>
+                    <li>Use the App for any illegal purposes</li>
+                    <li>Attempt to hack, reverse engineer, or compromise the App's security</li>
+                    <li>Upload false, misleading, or inaccurate health data intentionally</li>
+                    <li>Share your account credentials with others</li>
+                    <li>Use automated systems (bots) to access the App</li>
+                    <li>Abuse, harass, or harm other users</li>
+                    <li>Violate any applicable laws or regulations</li>
+                    <li>Use the App to distribute malware or harmful content</li>
+                    <li>Attempt to access other users' data</li>
+                    <li>Circumvent subscription or payment systems</li>
+                </ul>
+
+                <h2>8. Intellectual Property Rights</h2>
+                
+                <h3>8.1 Ownership</h3>
+                <ul>
+                    <li>All content, features, and functionality of the App are owned by APPGAH</li>
+                    <li>This includes but is not limited to: software code, designs, graphics, text, logos, and trademarks</li>
+                    <li>Protected by copyright, trademark, and other intellectual property laws</li>
+                </ul>
+
+                <h3>8.2 License Grant</h3>
+                <ul>
+                    <li>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App</li>
+                    <li>This license is for personal, non-commercial use only</li>
+                    <li>You may not copy, modify, distribute, sell, or lease any part of the App</li>
+                </ul>
+
+                <h2>9. Disclaimer of Warranties</h2>
+                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+                <ul>
+                    <li>Warranties of merchantability, fitness for a particular purpose, or non-infringement</li>
+                    <li>Warranties that the App will be uninterrupted, error-free, or secure</li>
+                    <li>Warranties regarding the accuracy, reliability, or completeness of content</li>
+                </ul>
+
+                <h2>10. Limitation of Liability</h2>
+                <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</p>
+                <ul>
+                    <li>APPGAH shall not be liable for any indirect, incidental, special, consequential, or punitive damages</li>
+                    <li>This includes damages for loss of profits, data, goodwill, or other intangible losses</li>
+                    <li>Our total liability shall not exceed the amount you paid for subscriptions in the past 12 months</li>
+                    <li>Some jurisdictions do not allow limitation of liability, so these limitations may not apply to you</li>
+                </ul>
+
+                <h2>11. Termination</h2>
+                
+                <h3>11.1 Termination by You</h3>
+                <ul>
+                    <li>You may stop using the App at any time</li>
+                    <li>You may delete your account through the App settings</li>
+                    <li>Account deletion is permanent and cannot be reversed</li>
+                </ul>
+
+                <h3>11.2 Termination by Us</h3>
+                <p>We may suspend or terminate your access to the App immediately, without notice, if:</p>
+                <ul>
+                    <li>You violate these Terms</li>
+                    <li>You engage in fraudulent or illegal activities</li>
+                    <li>Your account is inactive for an extended period</li>
+                    <li>Required by law or regulatory authorities</li>
+                </ul>
+
+                <h2>12. Governing Law and Dispute Resolution</h2>
+                
+                <h3>12.1 Governing Law</h3>
+                <p>These Terms are governed by and construed in accordance with the laws of Turkey, without regard to conflict of law principles. If you are located in a different country, your local consumer protection laws may also apply.</p>
+
+                <h3>12.2 Dispute Resolution</h3>
+                <p>In the event of any dispute arising from these Terms or your use of the App:</p>
+                <ol>
+                    <li><strong>Informal Resolution:</strong> We encourage you to contact us first at appgah.dev@gmail.com to resolve any issues informally</li>
+                    <li><strong>Negotiation Period:</strong> We will attempt to resolve disputes through good faith negotiation for 30 days</li>
+                    <li><strong>Legal Action:</strong> If informal resolution fails, disputes shall be resolved in the courts of Ankara, Turkey, or your local jurisdiction as permitted by law</li>
+                </ol>
+
+                <h2>13. Changes to Terms</h2>
+                <ul>
+                    <li>We may modify these Terms at any time</li>
+                    <li>Material changes will be notified through the App or via email</li>
+                    <li>Continued use after changes constitutes acceptance</li>
+                    <li>You should review these Terms periodically</li>
+                </ul>
+
+                <h2>14. Contact Information</h2>
+                <p>If you have any questions, concerns, or complaints regarding these Terms, please contact us:</p>
+                <ul>
+                    <li><strong>Email:</strong> appgah.dev@gmail.com</li>
+                    <li><strong>App Support:</strong> Available through the app's contact feature</li>
+                    <li><strong>Response Time:</strong> We aim to respond within 48-72 hours</li>
+                </ul>
+
+                <h2>15. Acknowledgment</h2>
+                <p>By using BMI Calculator, you acknowledge that:</p>
+                <ul>
+                    <li>You have read and understood these Terms and Conditions</li>
+                    <li>You agree to be bound by these Terms</li>
+                    <li>You have read and understood our Privacy Policy</li>
+                    <li>You understand this App is not a substitute for medical advice</li>
+                    <li>You are using the App at your own risk</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Need Help?</h2>
+            <p>If you have any questions about these Terms & Conditions, please don't hesitate to contact us:</p>
+            <a href="mailto:appgah.dev@gmail.com" class="contact-email">
+                <span>📧</span>
+                <span>appgah.dev@gmail.com</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BMI Calculator by APPGAH. All rights reserved.</p>
+            <p><strong>Version:</strong> 1.0 - Initial Terms and Conditions for BMI Calculator</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="mailto:appgah.dev@gmail.com">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
