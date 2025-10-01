@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - BMI Calculator</title>
+    <meta name="description" content="Privacy Policy for BMI Calculator - AI-Powered Health Analysis App. Learn how we protect your data.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f8fafc;
+        }
+        
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 60px;
+        }
+        
+        .header-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .header-content {
+            text-align: center;
+            color: white;
+        }
+        
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.9);
+        }
+        
+        .header-content p {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            text-shadow: 0 0 15px rgba(0,0,0,0.7), 1px 1px 6px rgba(0,0,0,0.8);
+        }
+        
+        .back-nav {
+            margin-bottom: 30px;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-link:hover {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .content-section {
+            background: white;
+            margin: -40px auto 0;
+            border-radius: 25px 25px 0 0;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.1);
+            padding: 60px 0 80px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .privacy-content h2 {
+            color: #1a1a1a;
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 10px;
+        }
+        
+        .privacy-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .privacy-content h3 {
+            color: #334155;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 30px 0 15px;
+        }
+        
+        .privacy-content h4 {
+            color: #475569;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 25px 0 12px;
+        }
+        
+        .privacy-content p {
+            margin-bottom: 15px;
+            color: #475569;
+            line-height: 1.8;
+        }
+        
+        .privacy-content ul {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+        
+        .privacy-content li {
+            margin-bottom: 10px;
+            color: #475569;
+            line-height: 1.7;
+        }
+        
+        .privacy-content strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea10, #764ba210);
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+        
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-email:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            background: #0f0f0f;
+            text-align: center;
+            padding: 40px 0;
+            color: #94a3b8;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links {
+            margin-top: 20px;
+        }
+        
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #667eea;
+        }
+        
+        .last-updated {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .last-updated strong {
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content h1 { font-size: 2.5rem; }
+            .header-content p { font-size: 1.1rem; }
+            .content { padding: 0 20px; }
+            .privacy-content h2 { font-size: 1.7rem; }
+            .contact-section h2 { font-size: 2rem; }
+            .footer-links a { 
+                display: block; 
+                margin: 10px 0; 
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-section { padding: 60px 0 40px; }
+            .content-section { padding: 40px 0 60px; }
+            .contact-section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+    <section class="header-section">
+        <div class="container">
+            <div class="back-nav">
+                <a href="index.html" class="back-link">
+                    <span>←</span>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+            <div class="header-content">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy is our priority. Learn how we protect your data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content">
+            <div class="last-updated">
+                <strong>Last Updated:</strong> October 1, 2024
+            </div>
+            
+            <div class="privacy-content">
+                <h2>Introduction</h2>
+                <p>APPGAH ("we," "our," or "us") operates the BMI Calculator mobile application (the "Service"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application. Please read this privacy policy carefully. By using our Service, you agree to the collection and use of information in accordance with this policy.</p>
+
+                <h2>Information We Collect</h2>
+                
+                <h3>1. Information You Provide to Us</h3>
+                <ul>
+                    <li><strong>Account Information:</strong> When you create an account, we collect your name, email address, and password.</li>
+                    <li><strong>Health Data:</strong> BMI calculations, weight, height, age, and gender that you voluntarily enter.</li>
+                    <li><strong>Profile Information:</strong> Avatar customizations and preferences you set within the app.</li>
+                    <li><strong>Communication Data:</strong> Messages you send through our support channels.</li>
+                </ul>
+
+                <h3>2. Information Automatically Collected</h3>
+                <ul>
+                    <li><strong>Device Information:</strong> Device type, operating system, unique device identifiers.</li>
+                    <li><strong>Usage Data:</strong> App features used, time spent in app, interaction patterns.</li>
+                    <li><strong>Analytics Data:</strong> Crash reports and performance metrics to improve our service.</li>
+                </ul>
+
+                <h2>Data Storage Options</h2>
+                
+                <h3>Local Storage (Guest Mode)</h3>
+                <ul>
+                    <li>When using the app without creating an account, all your BMI data is stored locally on your device.</li>
+                    <li>This data includes your BMI history, calculations, and app preferences.</li>
+                    <li>We do not have access to data stored locally on your device.</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> If you delete the app or reset your device, all locally stored data will be permanently lost.</p>
+                </div>
+
+                <h3>Cloud Storage (Registered Users)</h3>
+                <ul>
+                    <li>When you create an account and log in, your BMI data is securely stored on our cloud servers.</li>
+                    <li>This allows you to access your data across multiple devices and prevents data loss.</li>
+                    <li>Cloud-stored data includes: BMI history, goals, progress tracking, and app preferences.</li>
+                    <li>You can choose to sync local data to the cloud when creating an account.</li>
+                </ul>
+
+                <h2>How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To provide and maintain our Service</li>
+                    <li>To manage your account and provide customer support</li>
+                    <li>To process subscription payments and manage premium features</li>
+                    <li>To send you important updates about our Service</li>
+                    <li>To improve our app functionality and user experience</li>
+                    <li>To comply with legal obligations</li>
+                    <li>To detect and prevent fraud or abuse</li>
+                </ul>
+
+                <h2>Data Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+
+                <h3>Service Providers</h3>
+                <p>We work with trusted third-party companies that help us operate our Service:</p>
+                <ul>
+                    <li><strong>Firebase (Google):</strong> For user authentication and cloud data storage</li>
+                    <li><strong>Google Play Services:</strong> For app functionality and services</li>
+                    <li><strong>Google Play Billing:</strong> For processing subscription payments</li>
+                    <li><strong>Analytics Services:</strong> For app performance monitoring (anonymized data only)</li>
+                    <li><strong>Advertising Partners:</strong> For displaying relevant ads (see Advertising section)</li>
+                </ul>
+
+                <h3>Legal Requirements</h3>
+                <p>We may disclose your information if required by law or to protect our rights and safety.</p>
+
+                <h2>Subscription and Payment Information</h2>
+                <ul>
+                    <li>Subscription purchases are processed through Google Play Store or Apple App Store.</li>
+                    <li>We do not store your payment card information.</li>
+                    <li>Subscription data (plan type, status, renewal dates) is stored to manage your premium features.</li>
+                    <li>You can cancel subscriptions directly through your app store account.</li>
+                </ul>
+
+                <h2>Advertising</h2>
+                <p>Our free app is supported by advertisements:</p>
+                <ul>
+                    <li>We display ads from third-party advertising networks.</li>
+                    <li>Ad partners may collect anonymous data to show relevant ads.</li>
+                    <li>We do not share your personal BMI data with advertising partners.</li>
+                    <li>You can remove ads by upgrading to our premium subscription.</li>
+                </ul>
+
+                <h2>AI Features</h2>
+                <ul>
+                    <li>Our AI health analysis features process your BMI data to provide personalized insights.</li>
+                    <li>AI processing is performed securely and your data is not used to train AI models.</li>
+                    <li>AI conversations are stored temporarily to maintain chat history within sessions.</li>
+                    <li>You can delete AI chat history at any time through the app settings.</li>
+                </ul>
+
+                <h2>Data Security</h2>
+                <p>We implement industry-standard security measures to protect your information:</p>
+                <ul>
+                    <li>Data encryption in transit and at rest</li>
+                    <li>Secure authentication systems</li>
+                    <li>Regular security audits and updates</li>
+                    <li>Limited access to personal data by authorized personnel only</li>
+                </ul>
+                <p>However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+                <h2>Data Retention</h2>
+                <ul>
+                    <li><strong>Account Data:</strong> Retained while your account is active and for 30 days after account deletion request.</li>
+                    <li><strong>Health Data:</strong> Stored as long as you maintain your account or until you request deletion.</li>
+                    <li><strong>Local Data:</strong> Automatically deleted when you uninstall the app.</li>
+                    <li><strong>Analytics Data:</strong> Retained in anonymized form for service improvement.</li>
+                </ul>
+
+                <h2>Your Rights and Choices</h2>
+                <p>You have the following rights regarding your personal information:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of your personal data</li>
+                    <li><strong>Correction:</strong> Update or correct your information</li>
+                    <li><strong>Deletion:</strong> Request deletion of your account and data</li>
+                    <li><strong>Data Portability:</strong> Export your BMI data</li>
+                    <li><strong>Opt-out:</strong> Unsubscribe from promotional communications</li>
+                </ul>
+
+                <h2>Children's Privacy</h2>
+                <p>Our Service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If we discover that a child under 13 has provided us with personal information, we will immediately delete such information from our servers.</p>
+                
+                <div class="highlight-box">
+                    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately at appgah.dev@gmail.com so we can take necessary action.</p>
+                </div>
+
+                <h2>International Data Transfers</h2>
+                <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your data in accordance with this privacy policy.</p>
+
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+                <ul>
+                    <li>Posting the new Privacy Policy in the app</li>
+                    <li>Sending an email notification (for registered users)</li>
+                    <li>Displaying a prominent notice in the app</li>
+                </ul>
+                <p>Changes become effective immediately upon posting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+            <a href="mailto:appgah.dev@gmail.com" class="contact-email">
+                <span>📧</span>
+                <span>appgah.dev@gmail.com</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 BMI Calculator by APPGAH. All rights reserved.</p>
+            <p><strong>Version:</strong> 2.0 - Updated Privacy Policy for BMI Calculator</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="terms-conditions.html">Terms & Conditions</a>
+                <a href="mailto:appgah.dev@gmail.com">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
