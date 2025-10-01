@@ -20,7 +20,6 @@
             overflow-x: hidden;
         }
         
-        /* Animated background */
         .hero-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
             background-size: 400% 400%;
@@ -29,7 +28,6 @@
             overflow: hidden;
         }
         
-        /* YENİ: Dark overlay ekleyin */
         .hero-section::after {
             content: '';
             position: absolute;
@@ -37,7 +35,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.2); /* Hafif karanlık overlay */
+            background: rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
         
@@ -47,7 +45,6 @@
             100% { background-position: 0% 50%; }
         }
         
-        /* Floating particles */
         .hero-section::before {
             content: '';
             position: absolute;
@@ -69,10 +66,9 @@
             margin: 0 auto;
             padding: 0 20px;
             position: relative;
-            z-index: 3; /* Overlay'den üstte olsun */
+            z-index: 3;
         }
         
-        /* Header Styles */
         .header {
             text-align: center;
             padding: 100px 0 80px;
@@ -80,11 +76,10 @@
         }
         
         .app-icon {
-            width: 160px; /* 140px'den 160px'e çıkardık */
-            height: 160px; /* 140px'den 160px'e çıkardık */
-            /* background: linear-gradient(135deg, #ff6b6b, #4ecdc4); KALDIRDIK */
-            background: transparent; /* Şeffaf arka plan */
-            border-radius: 35px; /* 30px'den 35px'e çıkardık */
+            width: 160px;
+            height: 160px;
+            background: transparent;
+            border-radius: 35px;
             margin: 0 auto 30px;
             display: flex;
             align-items: center;
@@ -93,7 +88,7 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
             animation: bounce 2s ease-in-out infinite;
             overflow: hidden;
-            padding: 0; /* Padding'i kaldırdık, logo büyük görünsün */
+            padding: 0;
         }
         
         @keyframes bounce {
@@ -128,43 +123,36 @@
             text-shadow: 0 0 10px rgba(0,0,0,0.6), 1px 1px 4px rgba(0,0,0,0.7);
         }
         
-        /* Download Button */
         .download-section {
             margin: 40px 0;
         }
         
-        /* Download Button - Daha canlı ve dikkat çekici */
         .app-store-badge {
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1); /* Canlı gradient */
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1);
             color: white;
-            padding: 20px 36px; /* Biraz daha büyük */
-            border-radius: 18px; /* Daha yuvarlak */
+            padding: 20px 36px;
+            border-radius: 18px;
             text-decoration: none;
-            font-weight: 700; /* Daha kalın font */
-            font-size: 1.2rem; /* Daha büyük text */
+            font-weight: 700;
+            font-size: 1.2rem;
             transition: all 0.4s ease;
-            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4); /* Canlı gölge */
+            box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4);
             position: relative;
             overflow: hidden;
-            text-transform: uppercase; /* Büyük harfler */
-            letter-spacing: 1px; /* Harf aralığı */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s ease-in-out infinite;
         }
         
-        /* Pulse animasyonu */
         @keyframes pulse {
             0% { box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4); }
             50% { box-shadow: 0 15px 35px rgba(255, 107, 107, 0.7); }
             100% { box-shadow: 0 15px 35px rgba(255, 107, 107, 0.4); }
         }
-
-        .app-store-badge {
-            animation: pulse 2s ease-in-out infinite; /* Sürekli nabız efekti */
-        }
         
-        /* Glow efekti */
         .app-store-badge::after {
             content: '';
             position: absolute;
@@ -182,7 +170,7 @@
         }
 
         .app-store-badge:hover::after {
-            opacity: 1; /* Hover'da ışıltı efekti */
+            opacity: 1;
         }
         
         .app-store-badge::before {
@@ -201,12 +189,11 @@
         }
         
         .app-store-badge:hover {
-            transform: translateY(-5px) scale(1.08); /* Daha büyük hover efekti */
-            box-shadow: 0 25px 50px rgba(255, 107, 107, 0.6); /* Daha güçlü gölge */
-            background: linear-gradient(135deg, #ff5252, #26c6da, #42a5f5); /* Hover'da daha canlı */
+            transform: translateY(-5px) scale(1.08);
+            box-shadow: 0 25px 50px rgba(255, 107, 107, 0.6);
+            background: linear-gradient(135deg, #ff5252, #26c6da, #42a5f5);
         }
         
-        /* Features Section */
         .features-section {
             background: #f8fafc;
             padding: 100px 0;
@@ -303,7 +290,6 @@
             font-size: 1.05rem;
         }
         
-        /* Stats Section */
         .stats-section {
             background: linear-gradient(135deg, #667eea, #764ba2);
             padding: 80px 0;
@@ -337,7 +323,6 @@
             opacity: 0.9;
         }
         
-        /* Stats section title için özel stil ekleyin */
         .stats-section .section-title {
             color: white !important;
             text-shadow: 0 0 20px rgba(0,0,0,0.8), 2px 2px 8px rgba(0,0,0,0.9) !important;
@@ -347,13 +332,11 @@
             background-clip: unset !important;
         }
 
-        /* Stats section'daki alt yazı için de */
         .stats-section p {
             color: white !important;
             text-shadow: 0 0 15px rgba(0,0,0,0.7), 1px 1px 6px rgba(0,0,0,0.8) !important;
         }
         
-        /* CTA Section */
         .cta-section {
             background: #1a1a1a;
             padding: 100px 0;
@@ -373,11 +356,10 @@
             margin-bottom: 40px;
         }
         
-        /* Footer */
         .footer {
             background: #0f0f0f;
             text-align: center;
-            padding: 50px 0;
+            padding: 50px 0 30px;
             color: #94a3b8;
         }
         
@@ -394,8 +376,25 @@
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
         }
+
+        .footer-links {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #2a2a2a;
+        }
+
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: #667eea;
+        }
         
-        /* Responsive Design */
         @media (max-width: 768px) {
             .header h1 { font-size: 2.5rem; }
             .header .subtitle { font-size: 1.2rem; }
@@ -403,42 +402,44 @@
             .features { grid-template-columns: 1fr; gap: 30px; }
             .container { padding: 0 15px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-links a { 
+                display: block; 
+                margin: 10px 0; 
+            }
         }
         
         @media (max-width: 480px) {
             .header { padding: 60px 0 40px; }
             .app-icon { 
-                width: 120px; /* 100px'den 120px'e çıkardık */
-                height: 120px; /* 100px'den 120px'e çıkardık */
-                padding: 0; /* Padding yok */
+                width: 120px;
+                height: 120px;
+                padding: 0;
             }
             .logo-image { border-radius: 25px; }
             .stat-number { font-size: 2.5rem; }
             .stats-grid { grid-template-columns: 1fr; gap: 30px; }
         }
         
-        /* Additional Styles */
         .logo-image {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Logo'yu kırpmadan sığdır */
-            border-radius: 35px; /* Ana container ile aynı radius */
+            object-fit: contain;
+            border-radius: 35px;
             transition: transform 0.3s ease;
         }
 
         .app-icon:hover .logo-image {
-            transform: scale(1.08); /* Hover efektini biraz artırdık */
+            transform: scale(1.08);
         }
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
             <header class="header">
-                    <div class="app-icon">
-        <img src="GooglePlayStore.png" alt="BMI Calculator Logo" class="logo-image">
-    </div>
+                <div class="app-icon">
+                    <img src="GooglePlayStore.png" alt="BMI Calculator Logo" class="logo-image">
+                </div>
                 <h1>BMI Calculator</h1>
                 <p class="subtitle">AI-Powered Health Analysis & Wellness Companion</p>
                 <p class="description">Transform your health journey with intelligent BMI tracking, personalized AI insights, and comprehensive wellness analytics designed for modern living.</p>
@@ -454,7 +455,6 @@
         </div>
     </section>
 
-    <!-- Features Section -->
     <section class="features-section">
         <div class="container">
             <div class="section-header">
@@ -466,43 +466,42 @@
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
                     <h3>AI Health Analysis</h3>
-                    <p>Get personalized health insights and risk assessments powered by advanced artificial intelligence tailored to your unique profile.</p>
+                    <p>Get personalized health insights and recommendations powered by advanced artificial intelligence tailored to your unique profile and health goals.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
                     <h3>Smart Trend Tracking</h3>
-                    <p>Monitor your BMI history with intelligent analytics and track progress towards your health goals with detailed visualizations.</p>
+                    <p>Monitor your BMI history with unlimited tracking. Visualize your progress with detailed charts and analytics to stay motivated.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">💬</div>
                     <h3>AI Chat Assistant</h3>
-                    <p>Ask health questions and get instant, evidence-based answers from our expert AI health assistant available 24/7.</p>
+                    <p>Get unlimited access to our AI health assistant for personalized advice, diet tips, and answers to your health questions 24/7.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">📄</div>
-                    <h3>Professional Reports</h3>
-                    <p>Generate and share detailed health reports in PDF format with comprehensive analysis and actionable recommendations.</p>
+                    <h3>Professional PDF Reports</h3>
+                    <p>Export unlimited professional health reports with comprehensive BMI analysis, history, and recommendations to share with healthcare providers.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Goal Achievement</h3>
-                    <p>Set personalized health goals and track your journey with intelligent milestone tracking and motivational insights.</p>
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Sync</h3>
+                    <p>Access your data across all devices with secure cloud synchronization. Your health data is always backed up and available when you need it.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>Your health data is encrypted and secure. Complete privacy protection with no personal information shared with third parties.</p>
+                    <h3>Privacy & Security</h3>
+                    <p>Your health data is encrypted and secure with both local storage and cloud options. Complete privacy protection with no data sharing.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats-section">
         <div class="container">
             <h2 class="section-title" style="color: white; margin-bottom: 20px;">Trusted by Health Enthusiasts</h2>
@@ -529,7 +528,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
             <h2 class="cta-title">Start Your Health Journey Today</h2>
@@ -542,11 +540,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 BMI Calculator. All rights reserved.</p>
+            <p>&copy; 2025 BMI Calculator by APPGAH. All rights reserved.</p>
             <p>Designed for healthy living <span class="heart">❤️</span></p>
+            <div class="footer-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-conditions.html">Terms & Conditions</a>
+                <a href="mailto:appgah.dev@gmail.com">Contact Us</a>
+            </div>
         </div>
     </footer>
 </body>
